@@ -1,0 +1,230 @@
+.body3{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color:rgb(96, 165, 189);
+    background: url('/images/840843081452.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:var(--secondary-color);
+
+}
+.svgimage{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    grid-area: 3/3/4/4;
+}
+.svgimage svg {
+    fill: none;
+    stroke: #02B3BF;
+    stroke-width: 8;
+    stroke-dasharray: 118 125;
+    transform: scale(3);
+    stroke-linecap: round;
+    animation: rot 2s linear infinite;
+    filter: drop-shadow(0 0 5px #02B3BF); 
+}
+
+@keyframes rot{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: -232;
+    }
+}
+.academics {
+    color:var(--primary-color);
+    grid-area: 1/2/2/5;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body3 img{
+    width:180px;
+    height: 110px;
+    /* mix-blend-mode:hard-light; */
+    object-fit: contain;
+
+}
+.radiant{
+    grid-area: 2/4/3/5;
+    display: flex;
+    position: relative;
+    align-items: end;
+    justify-content:start;
+    left: -60px;
+}
+.viswa{
+    grid-area: 3/4/4/5;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content:start;
+    top: 50px;
+    left: -20px;
+}
+.victoria{
+    grid-area: 4/3/5/4;
+    display: flex;
+    position: relative;
+    align-items: end;
+    justify-content:center;
+}
+.victoria img{
+    transform: scale(1.4);
+}
+.crown{
+    grid-area: 3/2/4/3;
+    display: flex;
+    position: relative;
+    align-items: end;
+    justify-content:end;
+} 
+.skillup{
+    grid-area: 2/2/3/3;
+    display: flex;
+    position: relative;
+    align-items:end;
+    justify-content:end;
+    right: -5px;
+}
+.skillup img{
+    transform: scale(1.4);
+}
+@media  (max-width: 1424px){
+    .radiant{
+        grid-area: 2/4/3/5;
+        display: flex;
+        position: relative;
+        align-items: end;
+        justify-content:start;
+        left: -20px;
+    }
+    .viswa{
+        grid-area: 3/4/4/5;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content:start;
+        top: 30px;
+        left: -20px;
+    }
+    .victoria{
+        grid-area: 4/3/5/4;
+        display: flex;
+        position: relative;
+        align-items: end;
+        justify-content:center;
+        top: 60px;
+    }
+    .crown{
+        grid-area: 3/2/4/3;
+        display: flex;
+        position: relative;
+        align-items: end;
+        justify-content:end;
+        left: 10px;
+        top: 30px;
+    }
+    .crown img{
+        transform: scale(0.8);
+    }
+    .skillup{
+        grid-area: 2/2/3/3;
+        display: flex;
+        position: relative;
+        align-items:end;
+        justify-content:end;
+        top: -10px;
+        right: -10px;
+    }
+    .skillup img{
+        transform: scale(1.1);
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .body3{
+        position: relative;
+        top: 100px;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(6, 1fr);
+        background-color:rgb(96, 165, 189);
+        background: url('/images/840843081452.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .svgimage{
+        display:none;
+    }
+    .academics {
+        color:var(--primary-color);
+        font-size: 39px;
+        grid-area: 1/1/2/4;
+        display:flex;
+    }
+    .radiant{
+        grid-area: 2/1/3/5;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        left:0px;
+    }
+    .radiant img{
+        transform: scale(1);
+    }
+    .viswa{
+        grid-area: 3/1/4/5;
+        display:flex;
+        position: relative;
+        align-items: center;
+        justify-content:center;
+        top: 0px;
+        left: 0px;
+    }
+    .victoria{
+        grid-area: 4/1/5/5;
+        display:flex;
+        position: relative;
+        align-items: center;
+        justify-content:center;
+        top: 0px;
+    }
+    .crown{
+        grid-area: 5/1/6/5;
+        display:flex;
+        position: relative;
+        align-items: center;
+        justify-content:center;
+        top: 0;
+        left: 0;
+    }
+    .crown img{
+        transform: scale(1);
+    }
+    .skillup{
+        grid-area: 6/1/7/5;
+        display:flex;
+        position: relative;
+        align-items: center;
+        justify-content:center;
+        top: 0;
+        left: 0;
+    }
+    .victoria img{
+        transform: scale(1.4);
+    }
+    .skillup img{
+        transform: scale(1.3);
+    }
+}

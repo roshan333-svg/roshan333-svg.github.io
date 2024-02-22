@@ -1,0 +1,105 @@
+.header{
+    background-color: rgb(6,4,7);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40%;
+    height: 80px;
+    width: 100%;
+    position:fixed;
+    z-index: 10;
+}
+.logo{
+    font-family: "Protest Guerrilla", sans-serif;
+    text-decoration: none;
+    font-size: 51px;
+    color: var(--secondary-color);
+    align-items: center;
+}
+
+.navbar a{
+    font-family:"Mukta", sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 20px;
+    font-weight: bolder;
+    color:var(--primary-color);
+    transition: .3s;
+    padding: 2px 9px;
+    border-radius: 8px;
+}
+
+.navbar a.active{
+    color: rgba(43, 171, 214, 0.782);
+}
+.navbar a:hover{
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+}
+.footer{
+    position:fixed;
+    top: 850px;
+    right: 20px;
+    z-index: 10;
+}
+.footer img{
+    height: 80px;
+    width: 80px;
+    filter: invert(50%) sepia(50%) saturate(50%) hue-rotate(150deg) brightness(50%) contrast(50%);
+}
+/* LAPROP RESPONSIVE */
+@media  (max-width: 1424px){
+    .navbar a{
+        font-size: 17px; 
+    }
+    .header{
+        height: 70px;
+    }
+    .logo img{
+        width: 49px;
+        transform: rotate(-5deg);
+    }
+    .logo{
+        font-family: "Protest Guerrilla", sans-serif;
+        text-decoration: none;
+        font-size: 41px;
+        color:var(--secondary-color);
+        display: flex;
+        align-items: center;
+    }
+    .footer{
+        position:fixed;
+        top: 510px;
+        right: 10px;
+        z-index: 10;
+    }
+    .footer img{
+        height: 70px;
+        width: 70px;
+    }  
+}
+/* MOBILE RESPONSIVE */
+@media only screen and (max-width: 600px){
+    .header{
+        position:absolute;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        height: 100px;
+        width: 100%;
+    }
+    .logo{
+        font-family: "Protest Guerrilla", sans-serif;
+        text-decoration: none;
+        font-size: 28px;
+        color: var(--secondary-color);
+    }
+    .navbar a{
+        font-size: 18px;
+        right: 0px;
+        padding: 0px 2px;
+    }
+    .footer{
+        display: none;
+    }
+}

@@ -1,0 +1,151 @@
+
+.body5{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    background: url('/images/840843081452.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.left{
+    grid-area: 1/1/2/2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+.name{
+    grid-area: 2/1/3/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    grid-area: 3/1/4/3;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.message{
+    grid-area: 4/1/5/3;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    top: -40px;
+}
+.submit{
+    grid-area: 4/2/5/3;
+    display: flex;
+    justify-content:center;
+    align-items: end;
+}
+.contact_me{
+    grid-area: 1/1/2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 70px;
+    color:var(--primary-color);
+}
+.name input,.email input{
+    height: 50px;
+    width: 50%;
+}
+.message textarea{
+    height: 130px;
+    width: 50%;
+
+}
+.name input[type="text"],
+.email input[type="email"],
+.message textarea {
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 20px;
+    font-family: "Protest Riot", sans-serif;
+}
+
+.name input[type="text"]::placeholder,
+.email input[type="email"]::placeholder,
+.message textarea::placeholder {
+    color: var(--primary-color);
+    font-style: italic;
+    font-size: 20px;
+}
+
+.name input[type="text"]:focus,
+.email input[type="email"]:focus,
+.message textarea:focus {
+    outline: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.submit button {
+    margin:-10px;;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Protest Riot", sans-serif; /* Using custom font family */
+}
+
+.submit button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.right{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.please_holder{
+    grid-area: 1/1/3/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.please_holder p{
+    font-family: "Protest Riot", sans-serif;
+    font-size: 41px;
+    font-weight: 100;
+    line-height: 50px;
+    color:var(--primary-color);
+}
+.please_holder a{
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    box-shadow: 2px 2px 40px var(--primary-color);
+    padding: 5px;
+    border-radius: 50%;
+}
+@media  (max-width: 1424px){
+    .body5{
+        height: 111vh;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .body5{
+        top: 100px;
+        position: relative;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .please_holder p{
+        font-size: 31px;
+        margin:0 10px 0 20px;
+    }
+}
