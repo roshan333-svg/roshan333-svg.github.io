@@ -1,178 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roshan Portfolio</title>
-    <link href="css1/style.css" rel="stylesheet">
-    <link href="css1/body1.css" rel="stylesheet">
-    <link href="css1/body2.css" rel="stylesheet">
-    <link href="css1/body3.css" rel="stylesheet">
-    <link href="css1/body4.css" rel="stylesheet">
-    <link href="css1/body5.css" rel="stylesheet">
-    <link href="css1/topbar.css" rel="stylesheet">
-    <link rel="icon" href="images/dp.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javascript/script.js" defer></script>
+    <title>Roshan</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">
-            Roshan</a>
+    <header>
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#about_me">About</a>
-            <a href="#academic">Academics</a>
-            <a href="#work">Work</a>
+            <a href="#" class="logo">ROSHAN.</a>
+            <ul class="nav_menu">
+                <li class="nav_item">
+                    <a class="nav_link" href="#">Home</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#">About</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#">Academic</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#">Work</a>
+                </li>
+                <div class="social_media">
+                    <a href="#"><img src="./images/github-mark.svg"></a>
+                    <a href="#"><img src="./images/linkedin-dark.svg"></a>
+                    <a href="#"><img src="./images/youtube-123.svg"></a>
+                </div>
+                <a class="follow">Follow</a>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
-    <footer class="footer"><a href="#" class="logo"><img src="images/dp.png"></a>
-    </footer>
-    <div class="body1">
-        <div class="sidebar">
-            <a href="https://www.linkedin.com/in/roshan-panthi/" target="_blank"><img src="images/linkedin-dark.svg"></a>
-            <a href="https://github.com/roshan333-svg" target="_blank"><img src="images/github-mark.svg"></a>
-            <a href="https://twitter.com/ROSHAN3338" target="_blank"><img src="images/X_logo_2023_original.svg.png"></a>
-            <a href="https://www.youtube.com/@THENEPALIPODCAST" target="_blank" ><img src="images/youtube-123.svg"></a>
-        </div>
-        <div class="nameholder">
-            <p>I am Roshan Panthi,</p>
-            <p>a web developer.</p>
-        </div>
-        <div class="bio">
-            <p>A dedicated Information Technology student with a focus on web 
-                development. Proficient in website design, passionate about 
-                leveraging technology. Eager to learn and collaborate on meaningful 
-                projects. Let's connect and discuss how we can make a difference 
-                together.</p>
-        </div>
-        <div class="photo">
-            <img src="images/profile.JPG" alt="profile pic">
-        </div>
-        <div class="buttons">
-            <div class="cat">
-                <a href="#">Hire Me</a>
-              
+    <main>
+        <!-- ----------------Hero Section-------------- -->
+
+        <div class="hero">
+            <div class="links">
+                <ul class="links_social">
+                    <li class="links_item">
+                        <a class="nav_link" href="#"><img src="./images/github-mark.svg"></a>
+                    </li>
+                    <li class="links_item">
+                        <a class="nav_link" href="#"><img src="./images/linkedin-dark.svg"></a>
+                    </li>
+                    <li class="links_item">
+                        <a class="nav_link" href="#"><img src="./images/youtube-123.svg"></a>
+                    </li>
+                </ul>
             </div>
-            <a href="#">Let's Talk</a>
+            <div class="hero-text">
+                <div class="hero-head">
+                    <h2>I am <span> Roshan Panthi,</span>
+                        <br> a Web Developer.
+                    </h2>
+                </div>
+                <div class="buttons">
+                    <button class="hire">
+                        <p>Hire</p><img src="./images/search.png">
+                    </button>
+                    <button class="hire">Resume
+                    </button>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="./images/profile.JPG">
+            </div>
+        </div>
+        <div id="about_me" class="body2">
+            <div class="aboutme">
+                <p class="page_title">ABOUT ME</p>
+            </div>
+            <div class="explain">
+                <a class="all_paragraph">
+                    <p>
+                        As an Information Technology student, I bring strong communication skills,
+                        reliability, and a diligent work ethic to the table, aimed at enhancing workplace
+                        efficiency. Proficient in programming, product development, and website design,
+                        I strive for innovation.</p>
+                    <br>
+                    <p>I value teamwork, prioritize customer satisfaction, and am committed to continuous
+                        learning for the betterment of society. With ambition and integrity, I aim to utilize
+                        my skills to make a positive impact.</p>
+                    <br>
+                    <p>In my role as co-host and Social Media Handler for "The Nepali Podcast", I effectively
+                        manage audience engagement strategies, blending informative content with a touch of
+                        humor to drive increased viewership and online interactions. My goal is to create an
+                        enjoyable and insightful digital experience for all.
+                    </p>
+                </a>
+                <p class="last_paragraph">
+                    As an IT student, I bring strong communication skills, reliability, and a diligent work ethic.
+                    Proficient in programming and website design, I value teamwork and customer satisfaction. I aim to
+                    make a positive impact through continuous learning and innovation. Also as a co-host and Social
+                    Media
+                    Handler for "The Nepali Podcast," I manage audience engagement strategies, creating an enjoyable
+                    digital experience for all.
+                </p>
+            </div>
+        </div>
+        <div id="academic" class="body1">
+            <div class="svgimage">
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="39" />
+                </svg>
+            </div>
+            <div class="aboutme">
+                <P class="page_title">ACADEMIC QUALIFICATION</P>
+            </div>
+            <div class="radiant"><img src="images/radipbs.webp">
+                <p class="cloz">RADIANT PUBLIC BOARDING SCHOOL</p>
+            </div>
+            <div class="viswa">
+                <p class="cloz">Vishwa Viswa Niketan Secondary School</p><img
+                    src="images/Viswa-Niketan-Secondary-School.jpg">
+            </div>
+            <div class="victoria"><img src="images/vu.jpg">
+                <p class="cloz">Victoria University</p>
+            </div>
+            <div class="crown">
+                <p class="cloz">Crown Institute of Higher Education</p><img src="images/CIHE-logo.png">
+            </div>
+            <div class="skillup"><img src="images/logo_horizontal.webp">
+                <p class="cloz">Skill Up Labs</p>
+            </div>
+        </div>
+        <div id="work" class="body2">
+            <div class="page_title">
+                <P>WORK EXPERIENCE</P>
+            </div>
+            <div class="wwff">
+                <div class="woolff">
+                    <div class="ww">
+                        <div class="animation">
+                            <p>WOOLWORTHS&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="animation_image"><img src="images/woolies.webp"></div>
+                    </div>
+                    <div class="duty">
+                        <p>2022 – Present</p>
+                        <p>Key responsibilities:</p>
+                        <ul>
+                            <li>Stock presentation during and after trading.</li>
+                            <li>Follow company guidelines for effective displays.</li>
+                            <li>Strong team player and manager under pressure.</li>
+                            <li>Independent, empathetic, quick learner.</li>
+                            <li>Skilled in customer interaction and sales.</li>
+                            <li>Organized material layout and labeling.</li>
+                            <li>Efficient stockroom management.</li>
+                            <li>Accurate pricing and inventory maintenance.</li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="woolff">
+                    <div class="ff">
+                        <div class="animation_image"><img src="images/ff-logo-text.svg"></div>
+                    </div>
+                    <div class="duty">
+                        <p>2023 – 2024 ( 1 year )</p>
+                        <p>Key responsibilities:</p>
+                        <ul>
+                            <li>Welcome and engage customers, providing assistance with information and decisions.</li>
+                            <li>Stay updated on sales trends, payment policies, and security measures.</li>
+                            <li>Calculate prices, process payments, and maintain accurate records.</li>
+                            <li>Organize materials for efficiency and ensure proper labeling.</li>
+                            <li>Collaborate with team members to ensure ongoing customer satisfaction.</li>
+                            <li>Understand pricing strategies and maintain accurate signage.</li>
+                            <li>Understand pricing, maintain accurate signage.</li>
+                            <li>Securely handle phone payments and process returns.</li>
+                            <li>Respond promptly to emails and calls, addressing inquiries professionally.</li>
+                            <li>Provide detailed product information, recommendations, and pricing to ensure customer satisfaction.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="last" class="hero1">
+            <form>
+                <div class="left">
+                    <div class="page_title">
+                        <p>CONTACT</p>
+                    </div>
+                    <div class="name">
+                        <input type="text" name="name" id="" placeholder="Name" required>
+                    </div>
+                    <div class="email">
+                        <input type="email" name="email" id="" placeholder="Email" required>
+                    </div>
+                    <div class="message">
+                        <textarea name="message" id="" placeholder="Enter your message..."></textarea>
+                    </div>
+                    <div class="submit">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </form>
+        
+            <div class="right">
+                <div class="please_holder">
+                    <p>Feel free to examine my projects on my GitHub profile.</p>
+                    <a href="https://github.com/roshan333-svg" target="_blank"><img src="images/github-mark.svg"></a>
+                </div>
+            </div>
         </div>
         
-    </div>
-    <div id="about_me" class="body2">
-        <div  class="aboutme">
-            <p>ABOUT ME</p>
-        </div>
-        <div class="explain">
-            <p>    
-            As an Information Technology student, I bring strong communication skills, 
-            reliability, and a diligent work ethic to the table, aimed at enhancing workplace 
-            efficiency. Proficient in programming, product development, and website design, 
-            I strive for innovation.</p>
-            <br>
-            <p>I value teamwork, prioritize customer satisfaction, and am committed to continuous 
-            learning for the betterment of society. With ambition and integrity, I aim to utilize 
-            my skills to make a positive impact.</p>
-            <br>
-            <p>In my role as co-host and Social Media Handler for "The Nepali Podcast", I effectively 
-            manage audience engagement strategies, blending informative content with a touch of 
-            humor to drive increased viewership and online interactions. My goal is to create an 
-            enjoyable and insightful digital experience for all.</p>
-        </div>
-    </div>
-    <div id="academic" class="body3">
-        <div class="svgimage">
-            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="50" cy="50" r="39" />
-              </svg>
-        </div>
-        <div class="academics">
-            <P>ACADEMIC QUALIFICATION</P>
-        </div>
-        <div class="radiant"><img src="images/radipbs.webp"></div>
-        <div class="viswa"><img src="images/Viswa-Niketan-Secondary-School.jpg"></div>
-        <div class="victoria"><img src="images/vu.jpg"></div>
-        <div class="crown"><img src="images/CIHE-logo.png"></div>
-        <div class="skillup"><img src="images/logo_horizontal.webp"></div>
-    </div>
-    <div id="work" class="body4">
-        <div class="experience">
-            <P>WORK EXPERIENCE</P>
-        </div>
-        <div class="woolworths">
-            <div class="ww">
-                <div class="animation">
-                    <p>WOOLWORTHS&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                </div>
-                <div class="animation_image"><img src="images/woolies.webp"></div>
-            </div>
-            <div class="ww_duty">
-                <p>2022 – Present</p>
-                <p>Key responsibilities:</p>
-                <ul>
-                    <li>Stock presentation during and after trading.</li>
-                    <li>Follow company guidelines for effective displays.</li>
-                    <li>Strong team player and manager under pressure.</li>
-                    <li>Independent, empathetic, quick learner.</li>
-                    <li>Skilled in customer interaction and sales.</li>
-                    <li>Organized material layout and labeling.</li>
-                    <li>Efficient stockroom management.</li>
-                    <li>Accurate pricing and inventory maintenance.</li>
-                </ul>
-            </div>  
-        </div>
-        <div class="fantastic">
-            <div class="ff">
-                <!-- <div class="animation">
-                    <p>WOOLWORTHS&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                </div> -->
-                <div class="animation_image"><img src="images/ff-logo-text.svg"></div>
-            </div>
-            <div class="ff_duty">
-                <p>2023 – Present</p>
-                <p>Key responsibilities:</p>
-                <ul>
-                    <li>Welcome and engage customers, assist with information and decisions.</li>
-                    <li>Stay updated on sales, payment policies, and security.</li>
-                    <li>Calculate prices, process payments, maintain records.</li>
-                    <li>Organize materials for efficiency and proper labeling.</li>
-                    <li>Collaborate for ongoing customer happiness.</li>
-                    <li>Organized material layout and labeling.</li>
-                    <li>Understand pricing, maintain accurate signage.</li>
-                    <li>Securely handle phone payments, process returns.</li>
-                    <li>Promptly respond to emails and calls, address inquiries professionally.</li>
-                    <li>Provide product details, recommendations, pricing for satisfaction.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <form action="https://formspree.io/f/xwkgogdd
-    method="POST">
-    <div id="last" class="body5">
-
-        <div class="left">
-            <div class="contact_me">
-                <p>CONTACT</p>
-            </div>
-            <div class="name">
-                <input type="text" name="name" id="" placeholder="Name" required>
-            </div>
-            <div class="email">
-                <input type="email" name="email" id="" placeholder="Email" required>
-            </div>
-            <div class="message">
-                <textarea name="message" id="" placeholder="Enter your message..."></textarea>
-            </div>
-            <div class="submit">
-                <button>Submit</button>
-            </div>
-        </div>
-
-        <div class="right">
-            <div class="please_holder">
-                <p>Feel free to examine my projects on my GitHub profile.</p>
-                <a href="https://github.com/roshan333-svg" target="_blank"><img src="images/github-mark.svg"></a>
-            </div>
-        </div>
-    </form>
-    </div>
+        <!-- ----------------Hero Finished-------------- -->
+    </main>
 </body>
-</html> 
+
+</html>
